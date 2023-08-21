@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_customer_service_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/electricity_bill_svgrepo_com" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/txt_generic_electrical_energy_cost_calculator"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_enter_customer_service_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="@string/txt_enter_customer_service_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_enter_customer_service_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/alpha_number_digit"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLength="10"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_enter_meter_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/txt_enter_meter_reading">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_enter_meter_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="8"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/txt_submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

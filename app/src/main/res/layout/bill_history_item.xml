@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_customer_service_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="35"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_units"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_consumption_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+</LinearLayout>
